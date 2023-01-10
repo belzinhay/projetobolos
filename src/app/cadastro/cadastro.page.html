@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-title color="danger">Login de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button color="danger" routerLink="/home">Inicio</ion-button>
+
+  <form #form="ngForm">
+    <ion-item>
+      <ion-label>Usuario: </ion-label>
+      <ion-input type="text" name="login"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Senha: </ion-label>
+      <ion-input type="password" name="senha"></ion-input>
+    </ion-item>
+
+    <ion-button type="submit" color="danger">Enviar</ion-button>
+    <ion-button type="submit" color="danger">Registre-se</ion-button>
+  </form>
+</ion-content>
